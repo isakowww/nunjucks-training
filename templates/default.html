@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "./partials/head.html" %}
+
+<body>
+  {% include "./partials/header.html" %}
+
+  <main>
+    {% block content %}
+    <!-- Ovde se ubacuje html od strane koja koristi ovaj layout -->
+    {% endblock %}
+  </main>
+
+  {% include "./partials/footer.html" %}
+
+  {% include "./partials/end.html" %}
+
+
+</body>
+</html>
